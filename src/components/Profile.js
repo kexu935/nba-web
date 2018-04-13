@@ -36,7 +36,7 @@ export class Profile extends React.Component {
                 </div>
                 <div className="profile-entry">
                     <div className="profile-entry-left">Weight</div>
-                    <div className="profile-entry-right">{`${weight}`}</div>
+                    <div className="profile-entry-right">{`${weight}lbs`}</div>
                 </div>
                 <div className="profile-entry">
                     <div className="profile-entry-left">PTS</div>
@@ -52,7 +52,7 @@ export class Profile extends React.Component {
                 </div>
                 <div className="profile-entry">
                     <div className="profile-entry-left">PIE</div>
-                    <div className="profile-entry-right">{`${pie}`}</div>
+                    <div className="profile-entry-right">{`${pie * 100}%`}</div>
                 </div>
             </div>
         );
