@@ -15,8 +15,8 @@ export class SearchBar extends React.Component {
             dataSource: !value ? [] : nba.searchPlayers(value).map(({fullName, playerId}) => {
                 return (
                     <Option key={playerId}>
-                        <img src={`${PROFILE_PIC_URL_PREFIX}/${playerId}.png`}/>
-                        <span>{fullName}</span>
+                        <img className='player-option-image' src={`${PROFILE_PIC_URL_PREFIX}/${playerId}.png`}/>
+                        <span className='player-option-label'>{fullName}</span>
                     </Option>);
             })
         });
