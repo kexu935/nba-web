@@ -52,7 +52,7 @@ export class Profile extends React.Component {
                 </div>
                 <div className="profile-entry">
                     <div className="profile-entry-left">PIE</div>
-                    <div className="profile-entry-right">{`${pie * 100}%`}</div>
+                    <div className="profile-entry-right">{`${(pie * 100).toFixed(1)}%`}</div>
                 </div>
             </div>
         );
